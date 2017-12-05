@@ -19,10 +19,17 @@ function pressIt() {
   });
 }
 
+function submitIt() {
+  $("form").submit(function(e) {
+    alert("Your form is going to be submitted now.");
+  });
+}
+
 $(document).ready(function(){
 
 // call functions here
   getIt();
   frameIt();
   pressIt();
+  submitIt();
 });
